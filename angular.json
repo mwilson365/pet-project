@@ -31,6 +31,8 @@
               "src/assets"
             ],
             "styles": [
+              "src/theme.scss",
+              "src/starter-kit-styles.scss",
               "src/styles.scss"
             ],
             "scripts": []

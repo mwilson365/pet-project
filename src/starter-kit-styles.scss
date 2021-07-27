@@ -1,0 +1,50 @@
+
+  @import '~@nelnet/unifi-components-web/src/sass/core/util/breakpoints/breakpoints';
+  @import '~@nelnet/unifi-components-angular/lib/scss/task-theme';
+  .skip-link {
+    top: auto;
+    left: -10000px;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    &:focus {
+      width: auto;
+      height: auto;
+      position: static;
+      line-height: 1.5;
+      margin-left: 1rem;
+    }
+  }
+  main {
+    padding: 3rem 3.375rem;
+    margin-left: auto;
+  }
+  a.logo {
+    display: flex;
+    align-items: center;
+    color: white !important;
+    text-decoration: none;
+    svg {
+      height: 2.25rem;
+      width: auto;
+      margin: 0 0.75rem;
+    }
+  }
+  @include u-media-breakpoint-up(md) {
+    main {
+      width: calc(100% - 2rem);
+    }
+    .main-container {
+      width: calc(100% - 15rem);
+    }
+    button.menu {
+      display: none;
+    }
+    u-drawer {
+      margin-top: 64px;
+    }
+    .logo {
+      margin-left: 0;
+    }
+  }
