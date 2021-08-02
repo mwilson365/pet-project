@@ -20,19 +20,5 @@
   </a>
 </u-app-bar>
 <u-drawer responsive="md" anchor="left" paper="square" #sidenav>
-  <nav>
-    <ul>
-      <li><a [routerLink]="">Menu item 1</a></li>
-      <li><a [routerLink]="" routerLinkActive="active" #rla="routerLinkActive"
-             [attr.aria-current]="rla.isActive ? 'page' : undefined">Active Menu Item</a>
-        <ul>
-          <li><a [routerLink]="" routerLinkActive="active" #childRla="routerLinkActive"
-                 [attr.aria-current]="childRla.isActive ? 'page' : undefined">Active Sub Item</a></li>
-          <li><a [routerLink]="">Submenu item 2</a></li>
-        </ul>
-      </li>
-      <li><a [routerLink]="">Menu Item 3</a></li>
-      <li><a [routerLink]="">Menu item 4</a></li>
-    </ul>
-  </nav>
+  <app-navigation></app-navigation>
 </u-drawer>
