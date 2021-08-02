@@ -26,9 +26,10 @@
     color: white !important;
     text-decoration: none;
     svg {
-      height: 2.25rem;
+      height: 3.25rem;
       width: auto;
       margin: 0 0.75rem;
+      fill: currentColor;
     }
   }
   @include u-media-breakpoint-up(md) {
