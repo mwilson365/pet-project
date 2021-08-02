@@ -1,0 +1,9 @@
+@import '~@nelnet/unifi-components-web/src/sass/core/util/breakpoints/breakpoints';
+
+.not-found {
+  width: 100%;
+
+  @include u-media-breakpoint-up(sm) {
+    width: auto;
+  }
+}
