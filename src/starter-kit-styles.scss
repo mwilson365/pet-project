@@ -1,6 +1,5 @@
+@import 'shared-variables';
 
-  @import '~@nelnet/unifi-components-web/src/sass/core/util/breakpoints/breakpoints';
-  @import '~@nelnet/unifi-components-angular/lib/scss/task-theme';
   .skip-link {
     top: auto;
     left: -10000px;
@@ -26,7 +25,7 @@
     color: white !important;
     text-decoration: none;
     svg {
-      height: 3.25rem;
+      height: 4.75rem;
       width: auto;
       margin: 0 0.75rem;
       fill: currentColor;

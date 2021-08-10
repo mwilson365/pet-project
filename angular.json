@@ -35,6 +35,11 @@
               "src/starter-kit-styles.scss",
               "src/styles.scss"
             ],
+            "stylePreprocessorOptions": {
+              "includePaths": [
+                "src/scss"
+              ]
+            },
             "scripts": []
           },
           "configurations": {
