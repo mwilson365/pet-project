@@ -8,6 +8,10 @@ nav {
   flex-direction: column;
   padding: 0;
   margin: 0;
+
+  @include u-media-breakpoint-up(md) {
+    flex-direction: row;
+  }
 }
 
 .nav__list-item {
@@ -16,20 +20,52 @@ nav {
 }
 
 .nav__link {
+  position: relative;
   border: 2px solid transparent;
   width: 100%;
   padding: 1rem 1rem 1rem 2rem;
   color: $u-theme-on-secondary;
   text-decoration: none;
   transition: background-color 300ms ease-in-out;
+  text-transform: uppercase;
 
   &:hover,
   &:focus {
     background-color: $u-theme-secondary-light;
     transition: background-color 300ms ease-in-out;
+    font-weight: $u-typography-font-weight-bold;
   }
   &:focus {
     border: 2px dotted;
     outline: none;
+  }
+
+  @include u-media-breakpoint-up(md) {
+    color: $u-theme-on-primary;
+    padding: 1rem;
+
+    &::after {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      transform: scaleX(0);
+      transition: .2s cubic-bezier(0,0,.2,1) 0ms;
+      border-bottom: 2px solid $u-theme-secondary;
+      pointer-events: none;
+      content: "";
+    }
+
+    &:hover {
+      background-color: transparent;
+
+      &::after {
+        transform: scaleX(1);
+      }
+    }
+
+    &:focus {
+      background-color: transparent;
+    }
   }
 }

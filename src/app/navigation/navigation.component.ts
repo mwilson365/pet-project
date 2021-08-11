@@ -18,6 +18,7 @@ export class NavigationComponent {
     };
     return hostClasses;
   }
+
   navLinks = [
     { route: '/', title: 'Home' },
     { route: 'adopt', title: 'Adopt'},
@@ -25,4 +26,10 @@ export class NavigationComponent {
     { route: 'faq', title: 'FAQs'},
     { route: 'contact', title: 'Contact Us'}
   ];
+
+  closeMenu() {
+    if (this.drawer) {
+      this.drawer.toggle();
+    }
+  }
 }

@@ -1,5 +1,5 @@
 <u-app-bar color="primary" position="sticky">
-  <div class="u-layout-constrained u-grid-container u-grid-alignitems--center">
+  <div class="u-layout-constrained u-grid-container u-grid-alignitems--center u-py-xs-1">
     <div class="main-logo u-mr-xs-3">
       <a [routerLink]="['/']" class="logo">
         <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -17,7 +17,7 @@
     </div>
     <ng-container [ngSwitch]="mobileView">
       <ng-container *ngSwitchCase="true">
-        <button class="u-icon-button u-button--inherit menu" [attr.aria-expanded]="mobileNav.opened ? true : false" (click)="mobileNav.toggle()">
+        <button class="u-icon-button u-button--inherit menu u-ml-xs-auto" [attr.aria-expanded]="mobileNav.opened ? true : false" (click)="mobileNav.toggle()">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" width="18px" height="18px">
             <path d="M0 0h24v24H0z" fill="none"/>
             <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
@@ -28,7 +28,9 @@
         </u-drawer>
       </ng-container>
       <ng-container *ngSwitchCase="false">
-        <app-navigation></app-navigation>
+        <div class="u-ml-xs-auto">
+          <app-navigation></app-navigation>
+        </div>
       </ng-container>
     </ng-container>
   </div>

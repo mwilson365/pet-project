@@ -1,4 +1,4 @@
-import {Component, Inject} from '@angular/core';
+import {Component, HostBinding, Inject} from '@angular/core';
 import {DOCUMENT} from '@angular/common';
 import {BreakpointObserver} from '@angular/cdk/layout';
 import {Router} from '@angular/router';
@@ -20,6 +20,8 @@ enum BREAKPOINTS {
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
+  @HostBinding('class') class = 'app-root';
+
   mobileView!: boolean;
 
   constructor(@Inject(DOCUMENT) private document: any, private breakpointObserver: BreakpointObserver) {

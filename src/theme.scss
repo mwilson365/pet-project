@@ -1,11 +1,10 @@
+@import 'shared-variables';
+@import '~@nelnet/unifi-components-angular/lib/unifi-core';
+
 $u-link-intext-selectors: "p";
-$u-layout-constrained: 768px;
-  // Declare theme overrides here before imports.
-  @import '~@nelnet/unifi-components-angular/lib/scss/task-theme';
-  @import '~@nelnet/unifi-components-angular/lib/unifi-core';
-  // Include the common styles for Unifi Core
-  @include u-core();
-  // Include the theming styles for Unifi Angular Components
-  @include u-theme();
-  // Be sure to include these mixins only once in your app!
-  
+
+// Include the common styles for Unifi Core
+@include u-core();
+// Include the theming styles for Unifi Angular Components
+@include u-theme();
+// Be sure to include these mixins only once in your app!

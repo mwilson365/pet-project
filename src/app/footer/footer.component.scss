@@ -1,1 +1,82 @@
 @import 'shared-variables';
+
+.footer {
+  background-color: $u-theme-primary;
+  color: $u-theme-on-primary;
+  padding: 2rem;
+
+  small {
+    display: block;
+    text-align: center;
+    font-weight: $u-typography-font-weight-bold;
+  }
+}
+
+.footer-nav--wrapper {
+  flex-direction: column;
+
+  @include u-media-breakpoint-up(sm) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.donate,
+.footer-nav,
+.hours {
+  border-bottom: 1px solid;
+  padding: 0.5rem;
+  h3 {
+    font-weight: $u-typography-font-weight-bold;
+    font-size: 1.25rem;
+  }
+  h4 {
+    font-weight: $u-typography-font-weight-bold;
+    font-size: 1rem;
+    text-transform: uppercase;
+  }
+
+  @include u-media-breakpoint-up(sm) {
+    border: 0;
+  }
+}
+
+.donate-link {
+  background-color: $u-theme-secondary;
+  color: $u-theme-on-secondary;
+  padding: 0.75rem;
+  display: block;
+  text-align: center;
+  border-radius: 4px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: $u-typography-font-weight-bold;
+  max-width: 15rem;
+  margin: auto;
+  transition: background-color 300ms ease-in-out;
+  border: 2px solid transparent;
+
+  &:hover,
+  &:focus {
+    background-color: lighten($u-theme-secondary, 15%);
+    transition: background-color 300ms ease-in-out;
+  }
+  &:focus {
+    outline: none;
+    border: 2px dotted;
+  }
+}
+
+.hours {
+  border-bottom: 0;
+}
+
+.footer-nav--list {
+  li {
+    list-style: none;
+  }
+}
+
+.footer-nav--link {
+  color: $u-theme-on-primary;
+}
