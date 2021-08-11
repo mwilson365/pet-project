@@ -1,12 +1,8 @@
 <nav>
-  <ul>
-    <li *ngFor="let item of navLinks">
-      <a [routerLink]="item.route" routerLinkActive="active" #rla="routerLinkActive"
-         [attr.aria-current]="rla.isActive ? 'page' : undefined">{{item.title}}</a>
-      <ul>
-        <li *ngFor="let child of item.children"><a [routerLink]="child.route" routerLinkActive="active" #childRla="routerLinkActive"
-               [attr.aria-current]="childRla.isActive ? 'page' : undefined">{{child.title}}</a></li>
-      </ul>
+  <ul class="nav__list u-grid-container">
+    <li *ngFor="let item of navLinks" class="nav__list-item">
+      <a [routerLink]="item.route" class="nav__link" routerLinkActive="active" #rla="routerLinkActive"
+         [attr.aria-current]="rla.isActive ? 'page' : undefined" (click)="drawer.toggle()">{{item.title}}</a>
     </li>
   </ul>
 </nav>

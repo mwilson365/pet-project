@@ -1,5 +1,5 @@
   <a href="" class="skip-link" (click)="skipToMain($event)">Skip to main content</a>
-  <app-header></app-header>
+  <app-header [mobileView]="mobileView"></app-header>
   <main>
     <div class="intro u-layout-constrained u-ml-xs-0">
       <router-outlet></router-outlet>

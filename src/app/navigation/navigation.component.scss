@@ -1,0 +1,35 @@
+@import 'shared-variables';
+
+nav {
+  padding: 0;
+}
+
+.nav__list {
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+}
+
+.nav__list-item {
+  display: inline-flex;
+  list-style: none;
+}
+
+.nav__link {
+  border: 2px solid transparent;
+  width: 100%;
+  padding: 1rem 1rem 1rem 2rem;
+  color: $u-theme-on-secondary;
+  text-decoration: none;
+  transition: background-color 300ms ease-in-out;
+
+  &:hover,
+  &:focus {
+    background-color: $u-theme-secondary-light;
+    transition: background-color 300ms ease-in-out;
+  }
+  &:focus {
+    border: 2px dotted;
+    outline: none;
+  }
+}
