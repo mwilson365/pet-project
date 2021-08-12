@@ -1,9 +1,9 @@
-@import '~@nelnet/unifi-components-web/src/sass/core/util/breakpoints/breakpoints';
+@import 'shared-variables';
 
-.not-found {
+.not-found-image {
   width: 100%;
 
-  @include u-media-breakpoint-up(sm) {
+  @include u-media-breakpoint-up(md) {
     width: auto;
   }
 }
