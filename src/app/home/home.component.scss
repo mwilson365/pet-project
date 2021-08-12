@@ -1,0 +1,111 @@
+@import 'shared-variables';
+
+.hero-image-container {
+  position: relative;
+  height: 100%;
+}
+
+.hero-image {
+  background-image: url('../../assets/hero-mobile.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 30rem;
+  background-position: 60%;
+
+  @media only screen and ('min-width: 670px') {
+    background-image: url('../../assets/hero-760px.jpg');
+    background-position: top center;
+  }
+
+  @include u-media-breakpoint-up(md) {
+    background-image: url('../../assets/hero-1920px.jpg');
+    height: 40rem;
+  }
+
+  @include u-media-breakpoint-up(xl) {
+    background-image: url('../../assets/hero-2600px.jpg');
+    height: 45rem;
+  }
+}
+
+.hero-image-header {
+  font-family: 'Caveat Brush', cursive;
+  font-weight: normal;
+  font-size: 3rem;
+  max-width: 25rem;
+  padding: 0 2rem;
+  margin: 2rem auto 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+
+  @media only screen and ('min-width: 670px') {
+    margin: 0;
+    top: 20%;
+    bottom: 20%;
+    left: 3rem;
+    right: 0;
+  }
+
+  @include u-media-breakpoint-up(md) {
+    left: 0;
+    font-size: 4rem;
+    max-width: 30rem;
+  }
+
+  @include u-media-breakpoint-up(xl) {
+    font-size: 5rem;
+    max-width: 35rem;
+  }
+}
+
+.mid-section {
+  padding: 5rem 2rem;
+
+  @include u-media-breakpoint-up(md) {
+    padding: 10rem 2rem;
+  }
+}
+
+.mid-section--right {
+  margin: 5rem auto 2rem;
+  h2 {
+    text-align: center;
+    max-width: 30rem;
+    margin: auto;
+  }
+
+  @include u-media-breakpoint-up(md) {
+    margin: auto;
+  }
+}
+
+.mid-section--left {
+  margin: auto;
+  max-width: 30rem;
+}
+
+.mid-section--counter-number {
+  max-width: 3rem;
+  height: 7rem;
+  border: 3px solid $u-theme-primary;
+  border-radius: 4px;
+  margin: 0.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  color: $u-theme-primary;
+  font-weight: $u-typography-font-weight-bold;
+}
+
+.mid-section--counter-text {
+  font-family: 'Caveat Brush', cursive;
+  font-size: 1.5rem;
+}
+
+.mid-section-heading {
+  font-size: 2rem;
+  line-height: 1.5;
+}

@@ -24,6 +24,7 @@ export class NavigationComponent {
     { route: 'adopt', title: 'Adopt'},
     { route: 'apply', title: 'Apply to Adopt'},
     { route: 'faq', title: 'FAQs'},
+    { route: 'about', title: 'About'},
     { route: 'contact', title: 'Contact Us'}
   ];
 
