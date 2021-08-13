@@ -1,15 +1,36 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
+import {NgForm} from '@angular/forms';
+import {notificationAnimation} from '@nelnet/unifi-components-angular';
 
 @Component({
   selector: 'app-contact',
   templateUrl: './contact.component.html',
-  styleUrls: ['./contact.component.scss']
+  styleUrls: ['./contact.component.scss'],
+  animations: [notificationAnimation.fadeInOut]
 })
-export class ContactComponent implements OnInit {
+export class ContactComponent {
 
-  constructor() { }
+  errorState = false;
 
-  ngOnInit(): void {
+  focusError(): void {
+    if (this.errorState) {
+      //Give the document time to recognize the notification
+      setTimeout(() => {
+        document.getElementById('errorMessage')!.focus();
+      });
+    }
+  }
+
+  focusInput(event: any, id: string): void {
+    event.preventDefault();
+    document.getElementById(id)!.focus();
+  }
+
+  submit(form: NgForm) {
+    if (form.invalid) {
+      this.errorState = true;
+      this.focusError();
+    }
   }
 
 }

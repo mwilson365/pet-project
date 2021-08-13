@@ -1,15 +1,47 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { UPanelsModule } from '@nelnet/unifi-components-angular';
+import {
+  UPanelsModule,
+  UNotificationModule,
+  UInputModule,
+  UFormHelperTextModule,
+  UFormControlModule,
+  ULabelModule,
+  URadioButtonModule,
+  UCheckboxModule,
+  UAppBarModule,
+  UButtonModule,
+  UDrawerModule
+} from '@nelnet/unifi-components-angular';
 
 @NgModule({
   declarations: [],
   imports: [
     CommonModule,
-    UPanelsModule
+    UAppBarModule,
+    UButtonModule,
+    UDrawerModule,
+    UPanelsModule,
+    UNotificationModule,
+    UInputModule,
+    UFormControlModule,
+    UFormHelperTextModule,
+    ULabelModule,
+    URadioButtonModule,
+    UCheckboxModule
   ],
   exports: [
-    UPanelsModule
+    UAppBarModule,
+    UButtonModule,
+    UDrawerModule,
+    UPanelsModule,
+    UNotificationModule,
+    UInputModule,
+    UFormControlModule,
+    UFormHelperTextModule,
+    ULabelModule,
+    URadioButtonModule,
+    UCheckboxModule
   ]
 })
 export class UnifiComponentsModule { }
