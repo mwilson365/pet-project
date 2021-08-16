@@ -5,7 +5,7 @@
       "type": "Adult Male",
       "breed": "Collie",
       "age": "2 years",
-      "neutered/spayed": "neutered",
+      "neutered": "neutered",
       "description": "Teddy has a lot of energy, and needs room to run! He would enjoy a home with a large yard, and loves kids! He gets along well with other dogs.",
       "photoFile": "Teddy-collie.jpg",
       "featured": true
@@ -15,7 +15,7 @@
       "type": "Adult Male",
       "breed": "Pug",
       "age": "3 years",
-      "neutered/spayed": "neutered",
+      "neutered": "neutered",
       "description": "Hercules is a snuggler! He loves attention, and would make the perfect lap dog companion. We recommend a quiet home with no other pets or small children.",
       "photoFile": "Hercules-pug.jpg",
       "featured": true
@@ -25,7 +25,7 @@
       "type": "Adult Female",
       "breed": "Domestic Shorthair",
       "age": "5 years",
-      "neutered/spayed": "spayed",
+      "neutered": "spayed",
       "description": "If you’re looking for a cuddler, Cruella is not your cat. She does her own thing! She is a great mouser, and will enjoy some occasional love. On her own terms, of course.",
       "photoFile": "Cruella.jpg",
       "featured": true
@@ -35,7 +35,7 @@
       "type": "Adult Female",
       "breed": "Domestic Longhair",
       "age": "3 years",
-      "neutered/spayed": "not spayed",
+      "neutered": "not spayed",
       "description": "Penelope is a little lover! She will sit on your lap all day if you let her. She is really mellow and would do well with other animals and children.",
       "photoFile": "Penelope.jpg",
       "featured": false
@@ -45,7 +45,7 @@
       "type": "Adult Male",
       "breed": "Domestic Shorthair",
       "age": "1 year",
-      "neutered/spayed": "neutered",
+      "neutered": "neutered",
       "description": "Tibbs is super playful and full of mischief! Would do well with other cats, but not dogs.",
       "photoFile": "Tibbs.jpg",
       "featured": false
@@ -55,7 +55,7 @@
       "type": "Senior Male",
       "breed": "Domestic Shorthair",
       "age": "7 years",
-      "neutered/spayed": "neutered",
+      "neutered": "neutered",
       "description": "Zulu is used to having rule over his domain, and would make a good companion for someone in a quiet home.",
       "photoFile": "Zulu.jpg",
       "featured": false
@@ -65,7 +65,7 @@
       "type": "Female Puppy",
       "breed": "Golden Retriever",
       "age": "4 months",
-      "neutered/spayed": "not spayed",
+      "neutered": "not spayed",
       "description": "Belle was brought to us as a rescue. She was born with only three legs, but that doesn't stop her! She is super smart, and would benefit from proper training.",
       "photoFile": "Belle.jpg",
       "featured": false
@@ -75,7 +75,7 @@
       "type": "Adult Male",
       "breed": "French Bulldog",
       "age": "3 years",
-      "neutered/spayed": "neutered",
+      "neutered": "neutered",
       "description": "Ah, Brutus. What can we say? His name fits his personality. Would make a good addition to a younger household, as he can be hard to handle.",
       "photoFile": "Brutus.jpg",
       "featured": false
@@ -85,7 +85,7 @@
       "type": "Senior Male",
       "breed": "Lab",
       "age": "8 years",
-      "neutered/spayed": "neutered",
+      "neutered": "neutered",
       "description": "Jackson came to us after his owner of 8 years passed away. He's looking for a great \"retirement\" home to live out his golden years.",
       "photoFile": "Jackson.jpg",
       "featured": false
