@@ -1,7 +1,7 @@
 <div class="main-container u-layout-constrained">
   <h1 tabindex="-1">Contact Us</h1>
   <p>Please fill out the form below and someone will respond to you as soon as possible!</p>
-  <u-notification @notificationAnimation id="errorMessage" tabIndex="-1" icon="error" type="error" iconLabel="Error" *ngIf="contactForm.submitted && contactForm.invalid">
+  <u-notification @notificationAnimation id="errorMessage" tabIndex="-1" icon="error" type="error" iconLabel="Error" *ngIf="contactForm.submitted && contactForm.invalid" class="u-mt-xs-4">
     <p><strong>Please correct these errors:</strong></p>
     <ul>
       <li *ngIf="name.invalid"><a href="name" (click)="focusInput($event, 'name')">Please enter a name.</a></li>

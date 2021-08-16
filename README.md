@@ -1,6 +1,11 @@
 # PetProject
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.1.3.
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.1.3, and was built using [Unifi Angular](https://angular.unifi.nelnet.io/).
+
+## Development
+- Clone the repo locally: `git clone https://github.com/esmikl/unifi-pet-project.git`
+- From the root of the project, run `npm install` to install the dependencies. NOTE: You must have access to either GLHEC Artifactory or Nelnet Artifactory, and have your .npmrc file set up accordingly.
+- Start up the development server: `ng serve` and navigate to `http://localhost:4200/`.
 
 ## Development server
 

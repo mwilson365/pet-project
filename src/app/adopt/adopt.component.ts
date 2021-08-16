@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import * as data from '../../pets.json';
 
 @Component({
   selector: 'app-adopt',
