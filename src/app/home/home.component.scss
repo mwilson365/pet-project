@@ -1,6 +1,6 @@
 @import 'shared-variables';
 
-.hero-image-container {
+.hero-image__container {
   position: relative;
   height: 100%;
 }
@@ -28,7 +28,7 @@
   }
 }
 
-.hero-image-header {
+.hero-image__header {
   font-family: 'Caveat Brush', cursive;
   font-weight: normal;
   font-size: 3rem;
@@ -86,7 +86,7 @@
   max-width: 30rem;
 }
 
-.mid-section--counter-number {
+.mid-section__counter-number {
   max-width: 3rem;
   height: 7rem;
   border: 3px solid $u-theme-primary;
@@ -100,12 +100,12 @@
   font-weight: $u-typography-font-weight-bold;
 }
 
-.mid-section--counter-text {
+.mid-section__counter-text {
   font-family: 'Caveat Brush', cursive;
   font-size: 1.5rem;
 }
 
-.mid-section-heading {
+.mid-section__heading {
   font-size: 2rem;
   line-height: 1.5;
 }
