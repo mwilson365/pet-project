@@ -13,7 +13,7 @@
     <p>Thank you for contacting us! Someone will respond as soon as possible.</p>
   </u-notification>
   <div class="u-paper contact-form u-mt-xs-4">
-    <form #contactForm="ngForm">
+    <form #contactForm="ngForm" class="u-grid-container u-grid-direction--column">
       <div class="u-grid-item">
         <u-form-control [fullWidth]="true">
           <label uLabel for="name">Name*</label>
@@ -35,9 +35,7 @@
           <p u-form-error>Please enter your email</p>
         </u-form-control>
       </div>
-      <div class="u-grid-item u-ml-xs-auto u-mt-xs-4">
-        <button u-button type="submit" variant="contained" color="secondary" (click)="submit(contactForm)">Submit</button>
-      </div>
+      <button u-button type="submit" variant="contained" color="secondary" class="u-mt-xs-4 u-ml-xs-auto" (click)="submit(contactForm)">Submit</button>
     </form>
   </div>
 </div>
