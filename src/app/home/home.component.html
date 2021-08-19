@@ -20,5 +20,27 @@
   </div>
 </div>
 <div class="featured-pets">
-  <!-- TODO: Add featured pet cards -->
+  <h2 class="featured-heading">Featured Pets</h2>
+  <div class="u-grid-container u-grid-spacing--2 u-px-xs-2 u-layout-constrained u-mx-xs-auto">
+    <div class="u-grid-item" *ngFor="let pet of featurePets">
+      <div class="u-card">
+        <div class="u-card__media">
+          <img src="../assets/pets/{{pet.photoFile}}" alt="photo of {{pet.name}} who is a {{pet.breed}}" />
+        </div>
+        <div class="u-card__header">
+          <div class="u-card__header-title">
+            <h3 class="u-card__header-title--primary">{{pet.name}}</h3>
+            <p class="u-typography--overline">{{pet.breed}}</p>
+            <h4 class="u-card__header-title--secondary">{{pet.type}}</h4>
+          </div>
+        </div>
+        <div class="u-card__content u-pt-xs-0">
+          <p class="u-mb-xs-0">Age: {{pet.age}}</p>
+          <p>{{pet.neutered | titlecase}}</p>
+          <p class="u-mt-xs-2">{{pet.description}}</p>
+          <a routerLink="/apply"> Adopt {{pet.name}}</a>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>

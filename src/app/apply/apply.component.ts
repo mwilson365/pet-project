@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-apply',
@@ -6,10 +7,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./apply.component.scss']
 })
 export class ApplyComponent implements OnInit {
+  adoptionForm!: FormGroup
 
-  constructor() { }
+  constructor(private fb: FormBuilder) { }
 
   ngOnInit(): void {
+    this.adoptionForm = this.fb.group({
+      nameCtrl: ['', Validators.required]
+    });
   }
 
 }

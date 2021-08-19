@@ -12,7 +12,7 @@
   height: 30rem;
   background-position: 60%;
 
-  @media only screen and ('min-width: 670px') {
+  @media only screen and (min-width: 670px) {
     background-image: url('../../assets/hero-760px.jpg');
     background-position: top center;
   }
@@ -40,7 +40,7 @@
   left: 0;
   right: 0;
 
-  @media only screen and ('min-width: 670px') {
+  @media only screen and (min-width: 670px) {
     margin: 0;
     top: 20%;
     bottom: 20%;
@@ -108,4 +108,10 @@
 .mid-section__heading {
   font-size: 2rem;
   line-height: 1.5;
+}
+
+.featured-heading {
+  font-size: 1.25rem;
+  font-weight: $u-typography-font-weight-bold;
+  text-align:center;
 }

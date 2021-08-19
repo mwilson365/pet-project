@@ -1,3 +1,69 @@
 <div class="main-container u-layout-constrained">
   <h1 tabindex="-1">Adoption Application</h1>
+  <div class="u-paper">
+    <form [formGroup]="adoptionForm">
+      <fieldset class="u-form-control">
+        <legend class="u-form-label">Adopter Information</legend>
+        <u-form-control>
+          <label uLabel for="name">Name</label>
+          <input u-textfield type="text" id="name" name="name" required formControlName="nameCtrl" />
+          <p u-form-error>Please enter a name</p>
+        </u-form-control>
+        <u-form-control>
+          <label uLabel for="phone">Phone</label>
+          <input u-textfield type="text" id="phone" name="phone" />
+        </u-form-control>
+      </fieldset>
+      <fieldset class="u-form-control">
+        <p>List names and ages of other members of your household:</p>
+        <legend class="u-form-label">Household Information</legend>
+        <u-form-control [textarea]="true" [fullWidth]="true">
+          <label uLabel for="household-members">Household Members</label>
+          <textarea u-textfield id="household-members" name="household-members" rows="2"></textarea>
+        </u-form-control>
+      </fieldset>
+      <fieldset class="u-form-control">
+        <legend class="u-form-label">Household Activity (choose one):</legend>
+        <u-form-control [radio]="true">
+          <u-radio-button>
+            <label uLabel for="quiet">Quiet</label>
+            <input uRadio type="radio" id="quiet" name="household-activity">
+          </u-radio-button>
+        </u-form-control>
+        <u-form-control [radio]="true">
+          <u-radio-button>
+            <label uLabel for="somewhat-active">Somewhat Active</label>
+            <input uRadio type="radio" id="somewhat-active" name="household-activity">
+          </u-radio-button>
+        </u-form-control>
+        <u-form-control [radio]="true">
+          <u-radio-button>
+            <label uLabel for="active">Active</label>
+            <input uRadio type="radio" id="active" name="household-activity">
+          </u-radio-button>
+        </u-form-control>
+      </fieldset>
+      <fieldset class="u-form-control">
+        <legend class="u-form-label">Pet Ownership (check all that apply):</legend>
+        <u-form-control [checkbox]="true">
+          <u-checkbox>
+            <label uLabel for="currently-own">Currently own pets</label>
+            <input uCheckbox type="checkbox" id="currently-own" name="currently-own" />
+          </u-checkbox>
+        </u-form-control>
+        <u-form-control [checkbox]="true">
+          <u-checkbox>
+            <label uLabel for="past-own">Owned a pet within the past 5 years</label>
+            <input uCheckbox type="checkbox" id="past-own" name="past-own" />
+          </u-checkbox>
+        </u-form-control>
+        <u-form-control [checkbox]="true">
+          <u-checkbox>
+            <label uLabel for="re-home">Had to re-home a previous pet</label>
+            <input uCheckbox type="checkbox" id="re-home" name="re-home" />
+          </u-checkbox>
+        </u-form-control>
+      </fieldset>
+    </form>
+  </div>
 </div>
